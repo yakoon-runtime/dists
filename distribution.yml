@@ -77,6 +77,25 @@ components:
         - y5n-runtime-engine
         - y5n-runtime-transport
         - websockets
+  y5n-apps-shell:
+    releases:
+      0.3.0:
+        url: https://github.com/yakoon-runtime/apps/releases/download/y5n-apps-shell-v0.3.0/y5n-apps-shell.artifact.tar.gz
+        digest: sha256:bd87ecb6fe324b05f763dc334b399d1e123cd47fc53e28bbd2f6840c3b8c0d8e
+        dependencies:
+        - y5n-runtime-api
+        - y5n-runtime-engine
+        - y5n-runtime-transport
+        - textual
+        - websockets
+        - pyyaml
+  y5n-apps-web:
+    releases:
+      0.1.0:
+        url: https://github.com/yakoon-runtime/apps/releases/download/y5n-apps-web-v0.1.0/y5n-apps-web.artifact.tar.gz
+        digest: sha256:1f392f48c262e3e64295dcb571800a0b5f98bd0d3045942cc094de4b9aafa418
+        dependencies:
+        - y5n-runtime-api
 bundles:
   system:
   - y5n-caps-system
@@ -90,3 +109,7 @@ bundles:
   - y5n-runtime-llm
   - y5n-sdk-python
   - y5n-apps-runtime
+  shell:
+  - y5n-apps-shell
+  web:
+  - y5n-apps-web
