@@ -96,6 +96,14 @@ components:
         digest: sha256:1f392f48c262e3e64295dcb571800a0b5f98bd0d3045942cc094de4b9aafa418
         dependencies:
         - y5n-runtime-api
+  y5n-caps-ident:
+    releases:
+      0.8.0:
+        url: https://github.com/yakoon-runtime/caps-ident/releases/download/y5n-caps-ident-v0.8.0/y5n-caps-ident.artifact.tar.gz
+        digest: sha256:3e4cb6c77d687eef45da1c272e1f90ef865215d12b3dbfef1ae080e4708e9fec
+        dependencies:
+        - y5n-runtime-api
+        - y5n-sdk-python
 bundles:
   system:
   - y5n-caps-system
@@ -113,3 +121,5 @@ bundles:
   - y5n-apps-shell
   web:
   - y5n-apps-web
+  ident:
+  - y5n-caps-ident
