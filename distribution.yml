@@ -71,7 +71,7 @@ components:
     releases:
       0.1.0:
         url: https://github.com/yakoon-runtime/apps/releases/download/y5n-apps-runtime-v0.1.0/y5n-apps-runtime.artifact.tar.gz
-        digest: sha256:1be15566a484de3a298bd93006578692bd917f8991117ecaa1fcee72d1db00aa
+        digest: sha256:c94ba074b8b5e3415e3d9d2b35eb51b7d31efd2b6d307f7eddd9632f9b9d14d0
         dependencies:
         - y5n-runtime-api
         - y5n-runtime-engine
@@ -81,7 +81,7 @@ components:
     releases:
       0.3.0:
         url: https://github.com/yakoon-runtime/apps/releases/download/y5n-apps-shell-v0.3.0/y5n-apps-shell.artifact.tar.gz
-        digest: sha256:bd87ecb6fe324b05f763dc334b399d1e123cd47fc53e28bbd2f6840c3b8c0d8e
+        digest: sha256:dfb33ae058e02c64faed3604a9ba9ddf96d2e195c580e894c4e91d5d480a4e1b
         dependencies:
         - y5n-runtime-api
         - y5n-runtime-engine
