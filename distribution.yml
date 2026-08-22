@@ -104,6 +104,8 @@ components:
         dependencies:
         - y5n-runtime-api
         - y5n-sdk-python
+        - y5n-runtime-store
+        - y5n-runtime-engine
 bundles:
   system:
   - y5n-caps-system
