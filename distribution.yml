@@ -106,6 +106,25 @@ components:
         - y5n-sdk-python
         - y5n-runtime-store
         - y5n-runtime-engine
+  y5n-caps-contacts:
+    releases:
+      0.8.0:
+        url: https://github.com/yakoon-runtime/caps-contacts/releases/download/y5n-caps-contacts-v0.8.0/y5n-caps-contacts.artifact.tar.gz
+        digest: sha256:9ef637fd0eb0926b3a8002af8c55dc6a7fa8ce6d38609cc1da459918e7f787f3
+        dependencies:
+        - y5n-runtime-api
+        - y5n-runtime-store
+        - y5n-sdk-python
+  y5n-caps-worlds:
+    releases:
+      0.8.0:
+        url: https://github.com/yakoon-runtime/caps-worlds/releases/download/y5n-caps-worlds-v0.8.0/y5n-caps-worlds.artifact.tar.gz
+        digest: sha256:8d7863d7cbf108360535df7eabf85d95853672246d57a39d48236dd8de17df61
+        dependencies:
+        - y5n-runtime-api
+        - y5n-runtime-store
+        - y5n-sdk-python
+        - y5n-runtime-engine
 bundles:
   system:
   - y5n-caps-system
@@ -125,3 +144,7 @@ bundles:
   - y5n-apps-web
   ident:
   - y5n-caps-ident
+  crm:
+  - y5n-caps-contacts
+  worlds:
+  - y5n-caps-worlds
