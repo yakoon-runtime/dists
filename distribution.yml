@@ -1,19 +1,19 @@
 components:
   y5n-caps-system:
     releases:
-      0.8.0:
-        url: https://github.com/yakoon-runtime/caps-system/releases/download/y5n-caps-system-v0.8.0/y5n-caps-system.artifact.tar.gz
-        digest: sha256:59c0be27a4b68d8e1f57b89cce307d680201a5a72509ce1f35890d6ff8faa2b8
+      0.9.0:
+        url: https://github.com/yakoon-runtime/caps-system/releases/download/y5n-caps-system-v0.9.0/y5n-caps-system.artifact.tar.gz
+        digest: sha256:8e637a166f3fe96264abf67df229ccbcf124abc97d5bc760fd3c86c43609eb5e
         dependencies:
         - y5n-runtime-api
         - y5n-sdk-python
+        - pyyaml
   y5n-runtime-api:
     releases:
-      0.1.0:
-        url: https://github.com/yakoon-runtime/runtime/releases/download/y5n-runtime-api-v0.1.0/y5n-runtime-api.artifact.tar.gz
-        digest: sha256:61d60dd38c9ea4b50f0cf4ddcd241edb4e946c4c23abb8abdefa601b34ccd2ff
-        dependencies:
-        - pyyaml
+      0.2.0:
+        url: https://github.com/yakoon-runtime/runtime/releases/download/y5n-runtime-api-v0.2.0/y5n-runtime-api.artifact.tar.gz
+        digest: sha256:3eae6d4b15ec37d2bc3e19229343d59ed671e2c6f808b2e9d566c5e3d2d9eeb3
+        dependencies: []
   y5n-runtime-boot:
     releases:
       0.1.0:
@@ -23,18 +23,19 @@ components:
         - y5n-runtime-api
   y5n-runtime-engine:
     releases:
-      0.8.0:
-        url: https://github.com/yakoon-runtime/runtime/releases/download/y5n-runtime-engine-v0.8.0/y5n-runtime-engine.artifact.tar.gz
-        digest: sha256:a68b86fbc6e279c36e04e8fb28e4d9576f8910865368af8ce3d63ef2920fe4ed
+      0.9.0:
+        url: https://github.com/yakoon-runtime/runtime/releases/download/y5n-runtime-engine-v0.9.0/y5n-runtime-engine.artifact.tar.gz
+        digest: sha256:eea883c7230d8ed45dc6eec6057b7efa01d1aeddb5ef67bd12e088a4b999b568
         dependencies:
         - y5n-runtime-api
         - y5n-runtime-store
         - jinja2
+        - pyyaml
   y5n-runtime-store:
     releases:
-      0.5.0:
-        url: https://github.com/yakoon-runtime/runtime/releases/download/y5n-runtime-store-v0.5.0/y5n-runtime-store.artifact.tar.gz
-        digest: sha256:57ee5c7424c7677a2a05ceb3ccf987be1d2a2e5230d21ca2e8ffdbaed7467ccc
+      0.6.0:
+        url: https://github.com/yakoon-runtime/runtime/releases/download/y5n-runtime-store-v0.6.0/y5n-runtime-store.artifact.tar.gz
+        digest: sha256:9f437999ad96e11115c94e9bf27f05c321476bad37c3e49e4053c7e92d119e81
         dependencies:
         - y5n-runtime-api
         - jsonpatch
@@ -63,10 +64,13 @@ components:
         dependencies: []
   y5n-sdk-python:
     releases:
-      0.1.0:
-        url: https://github.com/yakoon-runtime/sdk/releases/download/y5n-sdk-python-v0.1.0/y5n-sdk-python.artifact.tar.gz
-        digest: sha256:6c7272e7898b32866b8745f8ecf803fe5bb41b0d38ff6e70493bd6196261bf26
-        dependencies: []
+      0.2.0:
+        url: https://github.com/yakoon-runtime/sdk/releases/download/y5n-sdk-python-v0.2.0/y5n-sdk-python.artifact.tar.gz
+        digest: sha256:35756dd236fc6158a3a1f944c5e4d7f87ac0d8658fe2efd77d11ba585fc4d1f6
+        dependencies:
+        - y5n-runtime-api
+        - y5n-runtime-store
+        - pyyaml
   y5n-apps-runtime:
     releases:
       0.1.0:
@@ -98,9 +102,9 @@ components:
         - y5n-runtime-api
   y5n-caps-ident:
     releases:
-      0.8.0:
-        url: https://github.com/yakoon-runtime/caps-ident/releases/download/y5n-caps-ident-v0.8.0/y5n-caps-ident.artifact.tar.gz
-        digest: sha256:3e4cb6c77d687eef45da1c272e1f90ef865215d12b3dbfef1ae080e4708e9fec
+      0.9.0:
+        url: https://github.com/yakoon-runtime/caps-ident/releases/download/y5n-caps-ident-v0.9.0/y5n-caps-ident.artifact.tar.gz
+        digest: sha256:6c10b6bac6581e30a6a5e53e082769d24f1e17ba8f4d955cd670c5abc65ac6fb
         dependencies:
         - y5n-runtime-api
         - y5n-sdk-python
@@ -108,18 +112,18 @@ components:
         - y5n-runtime-engine
   y5n-caps-contacts:
     releases:
-      0.8.0:
-        url: https://github.com/yakoon-runtime/caps-contacts/releases/download/y5n-caps-contacts-v0.8.0/y5n-caps-contacts.artifact.tar.gz
-        digest: sha256:9ef637fd0eb0926b3a8002af8c55dc6a7fa8ce6d38609cc1da459918e7f787f3
+      0.9.0:
+        url: https://github.com/yakoon-runtime/caps-contacts/releases/download/y5n-caps-contacts-v0.9.0/y5n-caps-contacts.artifact.tar.gz
+        digest: sha256:c39b05e8af960b050d2c18552445ef6227d27f12f5391ea4703f7f637e3873eb
         dependencies:
         - y5n-runtime-api
         - y5n-runtime-store
         - y5n-sdk-python
   y5n-caps-worlds:
     releases:
-      0.8.0:
-        url: https://github.com/yakoon-runtime/caps-worlds/releases/download/y5n-caps-worlds-v0.8.0/y5n-caps-worlds.artifact.tar.gz
-        digest: sha256:8d7863d7cbf108360535df7eabf85d95853672246d57a39d48236dd8de17df61
+      0.9.0:
+        url: https://github.com/yakoon-runtime/caps-worlds/releases/download/y5n-caps-worlds-v0.9.0/y5n-caps-worlds.artifact.tar.gz
+        digest: sha256:e7ddd3a530936d195d1a3e16da00e18359f80e4de68017196b95723bcd1ab975
         dependencies:
         - y5n-runtime-api
         - y5n-runtime-store
