@@ -23,9 +23,9 @@ components:
         - y5n-runtime-api
   y5n-runtime-engine:
     releases:
-      0.9.0:
-        url: https://github.com/yakoon-runtime/runtime/releases/download/y5n-runtime-engine-v0.9.0/y5n-runtime-engine.artifact.tar.gz
-        digest: sha256:eea883c7230d8ed45dc6eec6057b7efa01d1aeddb5ef67bd12e088a4b999b568
+      0.9.1:
+        url: https://github.com/yakoon-runtime/runtime/releases/download/y5n-runtime-engine-v0.9.1/y5n-runtime-engine.artifact.tar.gz
+        digest: sha256:2d7e40fb8eb9d75f46af3431b987fe993a7b4b84d444cd355c08c22f65b30d68
         dependencies:
         - y5n-runtime-api
         - y5n-runtime-store
@@ -33,9 +33,9 @@ components:
         - pyyaml
   y5n-runtime-store:
     releases:
-      0.6.0:
-        url: https://github.com/yakoon-runtime/runtime/releases/download/y5n-runtime-store-v0.6.0/y5n-runtime-store.artifact.tar.gz
-        digest: sha256:9f437999ad96e11115c94e9bf27f05c321476bad37c3e49e4053c7e92d119e81
+      0.6.1:
+        url: https://github.com/yakoon-runtime/runtime/releases/download/y5n-runtime-store-v0.6.1/y5n-runtime-store.artifact.tar.gz
+        digest: sha256:93945dc9cfe3d95c7e6886c83b1ee164115b0aa16242ad9111c88a1888d5f452
         dependencies:
         - y5n-runtime-api
         - jsonpatch
@@ -73,9 +73,9 @@ components:
         - pyyaml
   y5n-apps-runtime:
     releases:
-      0.1.0:
-        url: https://github.com/yakoon-runtime/apps/releases/download/y5n-apps-runtime-v0.1.0/y5n-apps-runtime.artifact.tar.gz
-        digest: sha256:c94ba074b8b5e3415e3d9d2b35eb51b7d31efd2b6d307f7eddd9632f9b9d14d0
+      0.1.1:
+        url: https://github.com/yakoon-runtime/apps/releases/download/y5n-apps-runtime-v0.1.1/y5n-apps-runtime.artifact.tar.gz
+        digest: sha256:0f9ea44df8810931eb6177167e65eab254f11f5247f0cfa2df214818aabdffb0
         dependencies:
         - y5n-runtime-api
         - y5n-runtime-engine
