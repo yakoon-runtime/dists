@@ -8,11 +8,22 @@ components:
         - y5n-runtime-api
         - y5n-sdk-python
         - pyyaml
+      0.10.0:
+        url: https://github.com/yakoon-runtime/caps-system/releases/download/y5n-caps-system-v0.10.0/y5n-caps-system.artifact.tar.gz
+        digest: sha256:d86379f88dafac9e2a06ef9ad6945da21120b3eabad70de2a7d100b958c7a21f
+        dependencies:
+        - y5n-runtime-api
+        - y5n-sdk-python
+        - pyyaml
   y5n-runtime-api:
     releases:
       0.2.0:
         url: https://github.com/yakoon-runtime/runtime/releases/download/y5n-runtime-api-v0.2.0/y5n-runtime-api.artifact.tar.gz
         digest: sha256:3eae6d4b15ec37d2bc3e19229343d59ed671e2c6f808b2e9d566c5e3d2d9eeb3
+        dependencies: []
+      0.3.0:
+        url: https://github.com/yakoon-runtime/runtime/releases/download/y5n-runtime-api-v0.3.0/y5n-runtime-api.artifact.tar.gz
+        digest: sha256:39ddd3f157d44ceef8017fcc2b713f86c62f68fa64f8a4856e63b60551633f5c
         dependencies: []
   y5n-runtime-boot:
     releases:
@@ -26,6 +37,14 @@ components:
       0.9.1:
         url: https://github.com/yakoon-runtime/runtime/releases/download/y5n-runtime-engine-v0.9.1/y5n-runtime-engine.artifact.tar.gz
         digest: sha256:2d7e40fb8eb9d75f46af3431b987fe993a7b4b84d444cd355c08c22f65b30d68
+        dependencies:
+        - y5n-runtime-api
+        - y5n-runtime-store
+        - jinja2
+        - pyyaml
+      0.10.0:
+        url: https://github.com/yakoon-runtime/runtime/releases/download/y5n-runtime-engine-v0.10.0/y5n-runtime-engine.artifact.tar.gz
+        digest: sha256:2828ea71cbba7fc1d5b1312a4a3d91d849700db17c6af4719bf8a291f683c36b
         dependencies:
         - y5n-runtime-api
         - y5n-runtime-store
@@ -45,6 +64,12 @@ components:
       0.2.0:
         url: https://github.com/yakoon-runtime/runtime/releases/download/y5n-runtime-transport-v0.2.0/y5n-runtime-transport.artifact.tar.gz
         digest: sha256:a9253232a8bed3b43183b609bbd76a6474472b1376313e75edb7bd7a2add127a
+        dependencies:
+        - y5n-runtime-api
+        - websockets
+      0.3.0:
+        url: https://github.com/yakoon-runtime/runtime/releases/download/y5n-runtime-transport-v0.3.0/y5n-runtime-transport.artifact.tar.gz
+        digest: sha256:1158a672f3003ab4ac19657242575e66a5543f58c32ec4a3bee722a618310694
         dependencies:
         - y5n-runtime-api
         - websockets
@@ -71,6 +96,13 @@ components:
         - y5n-runtime-api
         - y5n-runtime-store
         - pyyaml
+      0.3.0:
+        url: https://github.com/yakoon-runtime/sdk/releases/download/y5n-sdk-python-v0.3.0/y5n-sdk-python.artifact.tar.gz
+        digest: sha256:c3894bb224e961ef1446cc23a11372ebf2d87b87ec3b97ad697730a48e57c53a
+        dependencies:
+        - y5n-runtime-api
+        - y5n-runtime-store
+        - pyyaml
   y5n-apps-runtime:
     releases:
       0.1.1:
@@ -93,6 +125,16 @@ components:
         - textual
         - websockets
         - pyyaml
+      0.3.1:
+        url: https://github.com/yakoon-runtime/apps/releases/download/y5n-apps-shell-v0.3.1/y5n-apps-shell.artifact.tar.gz
+        digest: sha256:c71dcfdf8ff6fb0d8d30df20d5fd5c4afafe35ea69067e8ca31544fea0f1db67
+        dependencies:
+        - y5n-runtime-api
+        - y5n-runtime-engine
+        - y5n-runtime-transport
+        - textual
+        - websockets
+        - pyyaml
   y5n-apps-web:
     releases:
       0.1.0:
@@ -105,6 +147,14 @@ components:
       0.9.0:
         url: https://github.com/yakoon-runtime/caps-ident/releases/download/y5n-caps-ident-v0.9.0/y5n-caps-ident.artifact.tar.gz
         digest: sha256:6c10b6bac6581e30a6a5e53e082769d24f1e17ba8f4d955cd670c5abc65ac6fb
+        dependencies:
+        - y5n-runtime-api
+        - y5n-sdk-python
+        - y5n-runtime-store
+        - y5n-runtime-engine
+      0.10.0:
+        url: https://github.com/yakoon-runtime/caps-ident/releases/download/y5n-caps-ident-v0.10.0/y5n-caps-ident.artifact.tar.gz
+        digest: sha256:90ed64d5fc21b8faa656ff8d487d00940f0a98c54f855673598e40fa8d9863e4
         dependencies:
         - y5n-runtime-api
         - y5n-sdk-python
